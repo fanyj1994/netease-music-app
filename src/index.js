@@ -1,10 +1,18 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import * as serviceWorker from './serviceWorker';
+import FastClick from 'fastclick'
+import Routers from './router/index'
+import 'antd-mobile/dist/antd-mobile.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+if ('addEventListener' in document) {
+  document.addEventListener('DOMContentLoaded', function() {
+    FastClick.attach(document.body);
+  }, false);
+}
+
+ReactDOM.render(<Routers />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

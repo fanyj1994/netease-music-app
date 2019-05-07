@@ -12,3 +12,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@function px2rem($px) {
+  @return ($px / 16 / 2) * 1rem;
+}

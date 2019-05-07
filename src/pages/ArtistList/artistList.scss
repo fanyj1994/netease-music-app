@@ -1,0 +1,33 @@
+.music-list {
+  width: 100%;
+  overflow: hidden;
+}
+
+.artist-category {
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  width: 2000px;
+  span {
+    padding: 0 10px;
+    &.active {
+      color: red;
+    }
+  }
+}
+.artist-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .artist-card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    img {
+      width: 100px;
+    }
+  }
+}
+
