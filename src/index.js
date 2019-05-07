@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import FastClick from 'fastclick'
 import Routers from './router/index'
 import 'antd-mobile/dist/antd-mobile.css'
+import './common/css/reset.css'
 
 if ('addEventListener' in document) {
   document.addEventListener('DOMContentLoaded', function() {
